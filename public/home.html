@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/home.css">
+    <title>Cumple</title>
+</head>
+<body>
+    <audio id="audioFotos" autoplay loop>
+        <source src="music/fotos.mp3" type="audio/mp3">
+    </audio>
+    <img class="background" src="images/Fondo_azul.jfif" alt="">
+    <main>
+        <nav class="barra">
+            <h1>Mis 29</h1>
+            <a href="#cuando">Cuándo</a>
+            <a href="#fotos">Fotos</a>
+            <a href="">Lugar</a>
+            <a href="#comentarios-container">Mensajes</a>
+        </nav>
+        <div class="banner_container">
+            <img class="banner" src="images/Banner.jpg" alt="">
+            <div class="title_container">
+                <h1>Mis 29</h1>
+                <h2>Maty</h2>
+            </div>
+        </div>
+     
+        <div id="cuando">
+            <p>¿Cuánto falta?</p>
+            <div class="countdown">
+                <div class="grupo">
+                    <p class="grande" id="dias">00</p>
+                    <p class="chico">dias</p>
+                </div>
+                <div class="grupo">
+                    <p class="grande" id="horas">00</p>
+                    <p class="chico">horas</p>
+                </div>
+                <div class="grupo">
+                    <p class="grande" id="minutos">00</p>
+                    <p class="chico">minutos</p>
+                </div>
+                <div class="grupo">
+                    <p class="grande" id="segundos">00</p>
+                    <p class="chico">segundos</p>
+                </div>
+            </div>
+        </div>
+        <div id="fotos">
+            <div class="image-container">
+                <img src="images/Enzio.jpg" id="Foto_1" class="izquierda fotos" alt="">
+                <p>Con Enzio.</p>
+            </div>
+            <div class="image-container">
+                <p>Con Ale</p>
+                <img src="images/Ale.jpg" class="derecha fotos" alt="">
+            </div>
+            <div class="image-container">
+                <img src="images/Carta.jpg" class="izquierda fotos" alt="">
+                <p>Un amigo de mierda</p>
+            </div>
+            <div class="image-container">
+                <p>Con el corneta</p>
+                <img src="images/Colec.jpg" class="derecha fotos" alt="">
+            </div>
+            <div class="image-container">
+                <img src="images/reunion.jpg" class="izquierda fotos" alt="">
+                <p>Amigo fiel</p>
+            </div>
+        </div>
+        <div id="comentarios-container">
+            <h1>Mensajes</h1>
+            <div id="comentarios"></div>
+            <input id="msg" placeholder="Deja tu comentario" required></input>
+            <button id="send">Comentar</button>
+        </div>
+    </main>
+
+    <script src="js/efectos.js"></script>
+    <script src="js/countdown.js"></script>
+    <script src="js/comentarios.js"></script>
+</body>
+</html>
